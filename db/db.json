@@ -79,8 +79,8 @@
   ],
   "burgers": [
     {
-      "nome": "Gustavo Ferreira",
-      "carne": "Alcatra",
+      "nome": "dfg",
+      "carne": "Maminha",
       "pao": "Italiano Branco",
       "opcionais": [
         "Bacon",
@@ -90,104 +90,14 @@
       "id": 1
     },
     {
-      "nome": "hjh",
-      "carne": "Alcatra",
+      "nome": "mmmm",
+      "carne": "Picanha",
       "pao": "3 Queijos",
       "opcionais": [
-        "Bacon",
-        "Cebola roxa",
-        "Salame"
+        "Bacon"
       ],
       "status": "Solicitado",
       "id": 2
-    },
-    {
-      "nome": null,
-      "carne": null,
-      "pao": null,
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 3
-    },
-    {
-      "nome": "",
-      "carne": "",
-      "pao": "",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 4
-    },
-    {
-      "nome": "",
-      "carne": "",
-      "pao": "",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 5
-    },
-    {
-      "nome": "",
-      "carne": "",
-      "pao": "",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 6
-    },
-    {
-      "nome": "",
-      "carne": "",
-      "pao": "",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 7
-    },
-    {
-      "nome": "",
-      "carne": "",
-      "pao": "",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 8
-    },
-    {
-      "nome": "",
-      "carne": "",
-      "pao": "",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 9
-    },
-    {
-      "nome": "",
-      "carne": "",
-      "pao": "",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 10
-    },
-    {
-      "nome": "",
-      "carne": "",
-      "pao": "",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 11
-    },
-    {
-      "nome": "",
-      "carne": "",
-      "pao": "",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 12
-    },
-    {
-      "nome": "",
-      "carne": "",
-      "pao": "",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 13
     }
   ]
 }
