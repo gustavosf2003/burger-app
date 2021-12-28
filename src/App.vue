@@ -17,6 +17,9 @@ export default {
       logo_src:"/img/logo.png",
       app_name: "Make Your Burger"
     }
+  },
+  mounted(){
+    console.log("Hello Hacker ;)")
   }
 }
 </script>

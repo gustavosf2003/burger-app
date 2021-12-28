@@ -1,19 +1,19 @@
-# ultimo
+# Interface
 
 ## Project setup
-```
-yarn install
+
+> Utilize o [npm](https://www.npmjs.com/) como package manager padrão.
+
+```js
+npm install // to install project dependencies
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
+```js
+npm run serve
+// to start development with compiles and hot-reloads
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```js
+npm run backend
+// to start the database
+```

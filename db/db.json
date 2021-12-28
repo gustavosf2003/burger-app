@@ -79,25 +79,16 @@
   ],
   "burgers": [
     {
-      "nome": "dfg",
-      "carne": "Maminha",
+      "nome": null,
+      "carne": "Alcatra",
       "pao": "Italiano Branco",
       "opcionais": [
         "Bacon",
-        "Salame"
+        "Salame",
+        "Cebola roxa"
       ],
       "status": "Solicitado",
       "id": 1
-    },
-    {
-      "nome": "mmmm",
-      "carne": "Picanha",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado",
-      "id": 2
     }
   ]
 }

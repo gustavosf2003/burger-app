@@ -1,4 +1,5 @@
 <template>
+  <Message :msg="msg" v-if="msg"/>
   <div id="burger-table">
       <div>
         <div id="burger-table-heading">
@@ -22,9 +23,11 @@
             </ul>
           </div>
           <div>
-            <select name="status" class="status" @change="updatedBurger($event,burger.id)">
+            <select name="status" class="status" @change="updatedBurger($event, burger.id)">
               <option disabled>Selecione</option>
-              <option :value="s.tipo" v-for="s in status" :key="s.id" :selected="burger.status== s.tipo">{{ s.tipo }}</option>
+              <option v-for="s in status" :key="s.id" :value="s.tipo" :selected="burger.status== s.tipo">
+                {{ s.tipo }}
+              </option>
             </select>
             <button class="delete-btn" @click="deleteBurger(burger.id)">Cancelar</button>
           </div>
@@ -34,13 +37,18 @@
 </template>
 
 <script>
+import Message from "../components/Message.vue"
 export default {
     name:"Dashboard",
+    components:{
+      Message
+    },
     data(){
       return{
         burgers: null,
         burger_id: null,
-        status:[]
+        status:[],
+        msg: null
       }
     },
     methods:{
@@ -62,21 +70,11 @@ export default {
           method: "DELETE"
         });
         const data = await req.json();
-
         //msg
+        this.msg = `Pedido removido com sucesso`
+        setTimeout(()=> this.msg = "" ,4000)
         this.getPedidos() //recarregar a página
       },
-      async updatedBurger(event,id){
-        const dataJson = JSON.stringify({status: option});
-        const req = await fetch(`http://localhost:3000/burgers/${id}`,{
-          method: "PATCH",
-          headers: {"Content-Type": "Application/Json"},
-          body: dataJson
-        });
-        const option = event.target.value;
-        const res = await req.json();
-        console.log(res)
-      }
     },
     mounted(){
       this.getPedidos()
