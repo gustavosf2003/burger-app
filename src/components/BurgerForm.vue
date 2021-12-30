@@ -65,7 +65,7 @@ export default {
                 this.carnes = data.carnes;
                 this.opcionaisdata = data.opcionais;
             }catch(e){
-                console.log("Erro ao conecatar ao database :(")
+                console.log("Erro ao conecatar ao database :(" + e)
             }
         },
         async createBurger(e){
@@ -110,6 +110,10 @@ export default {
 </script>
 
 <style>
+.main-container{
+    margin: 50px;
+    min-height: 250px;
+}
 #burger-form{
     max-width: 400px;
     margin: 0 auto;
